@@ -22,7 +22,8 @@ public class CategoryController {
     @GetMapping("/api/public/categories")
     public List<Category> getAllCategories(){
     List<Category> categories = categoryService.getALlCategories();
-    return new ResponseEntity<Stringv>()
+//    return new ResponseEntity<Stringv>();
+        return categories;
 
     }
 
